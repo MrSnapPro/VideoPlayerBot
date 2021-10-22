@@ -50,7 +50,7 @@ class Config:
 
     # Optional Variables
 
-    LOG_GROUP=os.environ.get("LOG_GROUP", "")
+    LOG_GROUP=os.environ.get("LOG_GROUP", "-1001174912596")
     if LOG_GROUP:
         LOG_GROUP=int(LOG_GROUP)
     else:
