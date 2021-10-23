@@ -45,7 +45,7 @@ class Config:
     API_ID = int(os.environ.get("API_ID", "7635212"))
     API_HASH = os.environ.get("API_HASH", "d2ff99e45bef6b7f94628277f888a644")
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "2075621143:AAFJVehrY_ytlVw09mvvDIiQ9TIagTk6bKI")     
-    SESSION = os.environ.get("SESSION_STRING", "BQBRHoOHBHRnl-2l2PFWO-WFLcaicneEiZcI5qO7xXzbGxBkCmnPKbj7vyFPIYcaQS-e4_oo59qAn2oAniI5LY-CeQ8We4rE_Qeg8iuVxyEWbCxBkJ4AcC3RO5Ct2HzcPxQSBEJlc6hTU7Nxx4S_WX1fdqKfG4yVAiMcqW9xB_lkUpe-3ixyVr7gk_zrgX53wuT4bxMfc50Ug0F1drdOHykb3bYdc1i99uo40oxIGiBDXxyTKJK6t0xVTN0ECV8QDv0wSn3haHVX3r37uBYQQ5Fn4vJROw-_hxiIRQki8ijnqP_kXxYYqJvUbmq5Lgxk_lWCuzQCp86BN0_5TcfJR4rnboexhwA")
+    SESSION = os.environ.get("SESSION_STRING", "BQBqUGppvrP_34vsw2AtGsKbIczO-EfgY7Bx7NSAUPcEeFlkLl2s-NwhqlCXOqnyDqP3VuGs2hLmGx2PLWkH-hyt4HSMDJ2nifxrsAC71d1wO2r_3QfykLPvoBCFyUlwfFn0774quixItWbnO2BekhAJKlcJ95vGTue9ppK-HRfdoXWcQl6s7yopqZqL3X0M40OKVKcCZf1Z1epLX4B0yCllvTj4P0i-j0gRRUNKU85ZOy-jkcPfVxOo4dnaiuNMyossSJ3In9CK_FFtywd2KS675MdjCrjCA6TzqqD2m2xA2_13irfgG_hpMhrGNzOou1m14alptRJ3VZ_5VB1fw_MQQCrxAgA")
     CHAT_ID = int(os.environ.get("CHAT_ID", "-1001217488490"))
 
     # Optional Variables
