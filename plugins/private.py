@@ -26,7 +26,7 @@ from helpers.utils import delete, update, is_admin
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, InputMediaDocument
 
 
-HOME_TEXT = "👋🏻 **Hi [{}](tg://user?id={})**, \n\nI'm **Video Player Bot**. \nI Can Stream Lives, YouTube Videos & Telegram Video Files On Video Chat Of Telegram Channels & Groups 😉! \n\n**Made With ❤️ By @ImSafone!** 👑"
+HOME_TEXT = "👋🏻 **Hi [{}](tg://user?id={})**, \n\nI'm **Video Player Bot**. \nI Can Stream Lives, YouTube Videos & Telegram Video Files On Video Chat Of Telegram Channels & Groups 😉! \n\n**Made With ⚡ By @kingdom_owner!** 😈"
 HELP_TEXT = """
 💡 --**Setting Up**--:
 
@@ -59,8 +59,6 @@ HELP_TEXT = """
 \u2022 `/setvar` - set/change heroku configs
 \u2022 `/getlogs` - get the ffmpeg & bot logs
 
-© **Powered By** : 
-**@AsmSafone | @AsmSupport** 👑
 """
 
 admin_filter=filters.create(is_admin) 
@@ -69,15 +67,15 @@ admin_filter=filters.create(is_admin)
 async def start(client, message):
     buttons = [
             [
-                InlineKeyboardButton("SEARCH VIDEOS", switch_inline_query_current_chat=""),
+                InlineKeyboardButton("⚡ SEARCH VIDEOS ⚡", switch_inline_query_current_chat=""),
             ],
             [
-                InlineKeyboardButton("CHANNEL", url="https://t.me/AsmSafone"),
-                InlineKeyboardButton("SUPPORT", url="https://t.me/AsmSupport"),
+                InlineKeyboardButton("⚡ CHANNEL ⚡", url="https://t.me/kingdom_family_chanel"),
+                InlineKeyboardButton("⚡ Group ⚡", url="https://t.me/kingdom_family"),
             ],
             [
-                InlineKeyboardButton("MORE BOTS", url="https://t.me/AsmSafone/173"),
-                InlineKeyboardButton("SOURCE CODE", url="https://github.com/S1-BOTS/VideoPlayerBot/tree/alpha"),
+                InlineKeyboardButton("⚡ Share Chanel ⚡", url="https://telegram.me/share/url?url=t.me/kingdom_family_chanel"),
+                InlineKeyboardButton("⚡ Share Group ⚡", url="https://telegram.me/share/url?url=t.me/kingdom_family"),
             ],
             [
                 InlineKeyboardButton("❔ HOW TO USE ❔", callback_data="help"),
@@ -92,15 +90,15 @@ async def start(client, message):
 async def show_help(client, message):
     buttons = [
             [
-                InlineKeyboardButton("SEARCH VIDEOS", switch_inline_query_current_chat=""),
+                InlineKeyboardButton("⚡ SEARCH VIDEOS ⚡", switch_inline_query_current_chat=""),
             ],
             [
-                InlineKeyboardButton("CHANNEL", url="https://t.me/AsmSafone"),
-                InlineKeyboardButton("SUPPORT", url="https://t.me/AsmSupport"),
+                InlineKeyboardButton("⚡ CHANNEL ⚡", url="https://t.me/kingdom_family_chanel"),
+                InlineKeyboardButton("⚡ Group ⚡", url="https://t.me/kingdom_family"),
             ],
             [
-                InlineKeyboardButton("MORE BOTS", url="https://t.me/AsmSafone/173"),
-                InlineKeyboardButton("SOURCE CODE", url="https://github.com/S1-BOTS/VideoPlayerBot/tree/alpha"),
+                InlineKeyboardButton("⚡ Share Chanel ⚡", url="https://telegram.me/share/url?url=t.me/kingdom_family_chanel"),
+                InlineKeyboardButton("⚡ Share Group ⚡", url="https://telegram.me/share/url?url=t.me/kingdom_family"),
             ],
             [
                 InlineKeyboardButton("BACK HOME", callback_data="home"),
@@ -127,7 +125,7 @@ async def update_handler(client, message):
         await k.edit("🔄 **Restarting, Please Wait...**")
     await update()
     try:
-        await k.edit("✅ **Restarted Successfully! \nJoin @AsmSafone For Update!**")
+        await k.edit("✅ **Restarted Successfully! \nJoin @kingdom_family_chanel For Support!**")
         await k.reply_to_message.delete()
     except:
         pass
