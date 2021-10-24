@@ -56,8 +56,6 @@ HELP_TEXT = """
 \u2022 `/replay` - play from the beginning
 \u2022 `/clrlist` - clear the playlist queue
 \u2022 `/restart` - update & restart the bot
-\u2022 `/setvar` - set/change heroku configs
-\u2022 `/getlogs` - get the ffmpeg & bot logs
 
 """
 
@@ -101,8 +99,8 @@ async def show_help(client, message):
                 InlineKeyboardButton("⚡ Share Group ⚡", url="https://telegram.me/share/url?url=t.me/kingdom_family"),
             ],
             [
-                InlineKeyboardButton("BACK HOME", callback_data="home"),
-                InlineKeyboardButton("CLOSE MENU", callback_data="close"),
+                InlineKeyboardButton("⚡ BACK HOME ⚡", callback_data="home"),
+                InlineKeyboardButton("⚡ CLOSE MENU ⚡", callback_data="close"),
             ]
             ]
     reply_markup = InlineKeyboardMarkup(buttons)
@@ -125,7 +123,7 @@ async def update_handler(client, message):
         await k.edit("🔄 **Restarting, Please Wait...**")
     await update()
     try:
-        await k.edit("✅ **Restarted Successfully! \nJoin @kingdom_family_chanel For Support!**")
+        await k.edit("✅ **Restarted Successfully! \nJoin @kingdom_family For Support!**")
         await k.reply_to_message.delete()
     except:
         pass
@@ -155,9 +153,9 @@ async def get_logs(client, message):
 @Client.on_message(filters.command(["setvar", f"setvar@{Config.BOT_USERNAME}"]) & admin_filter)
 async def set_heroku_var(client, message):
     if not Config.HEROKU_APP:
-        buttons = [[InlineKeyboardButton('HEROKU_API_KEY', url='https://dashboard.heroku.com/account/applications/authorizations/new')]]
+        buttons = [[InlineKeyboardButton('⚡ Developer ⚡', url='https://t.me/kingdom_owner')]]
         k=await message.reply_text(
-            text="❗ **No Heroku App Found !** \n__Please Note That, This Command Needs The Following Heroku Vars To Be Set :__ \n\n1. `HEROKU_API_KEY` : Your heroku account api key.\n2. `HEROKU_APP_NAME` : Your heroku app name. \n\n**For More Ask In @AsmSupport !!**", 
+            text="❗ **No Heroku App Found !** \n__Please Note That, This Command Needs The Following Heroku Vars To Be Set :__ \n\n1. `HEROKU_API_KEY` : Your heroku account api key.\n2. `HEROKU_APP_NAME` : Your heroku app name. \n\n**For More Ask In @kingdom_owner !!**", 
             reply_markup=InlineKeyboardMarkup(buttons))
         await delete(k)
         return     
