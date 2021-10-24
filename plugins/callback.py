@@ -152,15 +152,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data.lower() == "help":
         buttons = [
             [
-                InlineKeyboardButton("SEARCH VIDEOS", switch_inline_query_current_chat=""),
+                InlineKeyboardButton("⚡ SEARCH VIDEOS ⚡", switch_inline_query_current_chat=""),
             ],
             [
-                InlineKeyboardButton("CHANNEL", url="https://t.me/AsmSafone"),
-                InlineKeyboardButton("SUPPORT", url="https://t.me/AsmSupport"),
+                InlineKeyboardButton("⚡ CHANNEL ⚡", url="https://t.me/kingdom_family_chanel"),
+                InlineKeyboardButton("⚡ Group ⚡", url="https://t.me/kingdom_family"),
             ],
             [
-                InlineKeyboardButton("MORE BOTS", url="https://t.me/AsmSafone/173"),
-                InlineKeyboardButton("SOURCE CODE", url="https://github.com/S1-BOTS/VideoPlayerBot/tree/alpha"),
+                InlineKeyboardButton("⚡ Share Chanel ⚡", url="https://telegram.me/share/url?url=t.me/kingdom_family_chanel"),
+                InlineKeyboardButton("⚡ Share Group ⚡", url="https://telegram.me/share/url?url=t.me/kingdom_family"),
             ],
             [
                 InlineKeyboardButton("BACK HOME", callback_data="home"),
@@ -179,15 +179,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data.lower() == "home":
         buttons = [
             [
-                InlineKeyboardButton("SEARCH VIDEOS", switch_inline_query_current_chat=""),
+                InlineKeyboardButton("⚡ SEARCH VIDEOS ⚡", switch_inline_query_current_chat=""),
             ],
             [
-                InlineKeyboardButton("CHANNEL", url="https://t.me/AsmSafone"),
-                InlineKeyboardButton("SUPPORT", url="https://t.me/AsmSupport"),
+                InlineKeyboardButton("⚡ CHANNEL ⚡", url="https://t.me/kingdom_family_chanel"),
+                InlineKeyboardButton("⚡ Group ⚡", url="https://t.me/kingdom_family"),
             ],
             [
-                InlineKeyboardButton("MORE BOTS", url="https://t.me/AsmSafone/173"),
-                InlineKeyboardButton("SOURCE CODE", url="https://github.com/S1-BOTS/VideoPlayerBot/tree/alpha"),
+                InlineKeyboardButton("⚡ Share Chanel ⚡", url="https://telegram.me/share/url?url=t.me/kingdom_family_chanel"),
+                InlineKeyboardButton("⚡ Share Group ⚡", url="https://telegram.me/share/url?url=kingdom_family"),
             ],
             [
                 InlineKeyboardButton("❔ HOW TO USE ❔", callback_data="help"),
