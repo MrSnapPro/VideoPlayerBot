@@ -163,8 +163,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("⚡ Share Group ⚡", url="https://telegram.me/share/url?url=t.me/kingdom_family"),
             ],
             [
-                InlineKeyboardButton("BACK HOME", callback_data="home"),
-                InlineKeyboardButton("CLOSE MENU", callback_data="close"),
+                InlineKeyboardButton("⚡ BACK HOME ⚡", callback_data="home"),
+                InlineKeyboardButton("⚡ CLOSE MENU ⚡", callback_data="close"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
