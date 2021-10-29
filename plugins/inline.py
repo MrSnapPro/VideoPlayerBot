@@ -25,7 +25,7 @@ from pyrogram.types import InlineQueryResultArticle, InlineQueryResultPhoto, Inp
 
 buttons = [
             [
-                InlineKeyboardButton("❔ HOW TO USE ME ❔", callback_data="help"),
+                InlineKeyboardButton("❓ HOW TO USE ME ❓", callback_data="help"),
             ],
             [
                 InlineKeyboardButton("⚡ CHANNEL ⚡", url="https://t.me/kingdom_family_chanel"),
